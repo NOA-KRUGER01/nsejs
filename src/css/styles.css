@@ -1,0 +1,146 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    margin: 0;
+    padding: 0;
+    background-color: #181f2b; /* GitHub dark background */
+    color: #c9d1d9; /* Light text for contrast */
+}
+
+header {
+    background-color: #161b22; /* Dark header background */
+    color: #c9d1d9; /* Light text */
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #30363d; /* Subtle border */
+}
+
+nav {
+    background-color: #161b22; /* Darker shade for nav */
+    overflow: hidden;
+    border-bottom: 1px solid #30363d; /* Subtle border */
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #58a6ff; /* GitHub blue for links */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #21262d; /* Slightly lighter background on hover */
+    color: #c9d1d9; /* Light text */
+}
+
+.container {
+    padding: 20px;
+}
+
+button {
+    background-color: #621f8c; /* GitHub green button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #761ba0; /* Lighter green on hover */
+    transform: scale(1.05);
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+button a:hover {
+    text-decoration: none;
+}
+
+.card {
+    background: #161b22; /* Dark card background */
+    border: 1px solid #30363d; /* Subtle border */
+    border-radius: 6px;
+    padding: 16px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    color: #c9d1d9; /* Light text */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #161b22; /* Dark footer */
+    color: #8b949e; /* Muted text */
+    border-top: 1px solid #30363d; /* Subtle border */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#nb {
+    display: flex; /* Use flexbox for better text alignment */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    width: 200px; /* Width */
+    height: 133px; /* Height (3:2 ratio) */
+    background-color: #761ba0; /* Purple background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+    margin: 10px; /* Add spacing between buttons */
+}
+
+#nb:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+    background-color: #c037ff;
+}
+
+#nb:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+    text-decoration: none; /* Ensure no underline on click */
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Increase spacing between buttons */
+    justify-content: center; /* Center the grid */
+    padding: 20px; /* Add padding around the grid */
+}
+.pdf-container {
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #761ba0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll; /* Enable vertical scrolling */
+    height: 600px; /* Set a fixed height for the container */
+}
+
+.pdf-page {
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
